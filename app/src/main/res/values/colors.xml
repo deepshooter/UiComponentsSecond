@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="red">#d50000</color>
+    <color name="pink">#c51162</color>
+    <color name="purple">#aa00ff</color>
+    <color name="deep_purple">#6200ea</color>
+    <color name="indigo">#304ffe</color>
+    <color name="blue">#2962ff</color>
+    <color name="light_blue">#0091ea</color>
+    <color name="cyan">#00b8d4</color>
+    <color name="teal">#00bfa5</color>
+    <color name="green">#00c853</color>
+    <color name="light_green">#64dd17</color>
+    <color name="lime">#aeea00</color>
+    <color name="yellow">#ffd600</color>
+    <color name="amber">#ffab00</color>
+    <color name="orange">#ff6d00</color>
+    <color name="deep_orange">#dd2c00</color>
+    <color name="brown">#3e2723</color>
+    <color name="grey">#212121</color>
+    <color name="blue_grey">#263238</color>
+
+
+    <color name="white">#ffffff</color>
+    <color name="tranparentblackPopup">#20ffffff</color>
+    <color name="popup_bg">#F6F6F6</color>
+    <color name="light_yellow_colour">#FFCC00</color>
+    <color name="tranparentbackgroundtwo">#B3FFFFFF</color>
+    <color name="grey_border_shadow">#55BBBBBB</color>
+    <color name="grey_border">#BBBBBB</color>
+    <color name="tranparentblackcarousel">#60000000</color>
+
+
+</resources>

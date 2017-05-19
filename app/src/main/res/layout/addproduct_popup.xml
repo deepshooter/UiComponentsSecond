@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/vL_adp_popuop"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/tranparentblackPopup"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/vL_adp_rootlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/popup_background"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/text_bg"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:id="@+id/vT_appu_addProductText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="8"
+                android:gravity="center"
+                android:text="Add Product"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:id="@+id/vL_appu_closeLayout"
+                android:gravity="center"
+                android:layout_width="50dp"
+                android:layout_height="50dp">
+
+            <ImageView
+                android:id="@+id/vI_appu_closeImage"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:background="@drawable/closeforpopup" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+
+            <LinearLayout
+                android:id="@+id/rootlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/titlelayout"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/vT_appu_productText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|start"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center|start"
+                            android:text="Title"
+                            android:textColor="@color/grey"
+                            android:textSize="16sp" />
+
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext_bg_cornercrop"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/vE_appu_product"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center|start"
+                            android:layout_margin="10dp"
+                            android:background="@android:color/transparent"
+                            android:gravity="center|start"
+                            android:hint="Enter Title"
+                            android:inputType="text|textMultiLine|textNoSuggestions"
+                            android:maxLength="45"
+                            android:maxLines="2"
+                            android:textColor="@color/grey"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/deslayout"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/vT_appu_descriptionText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|start"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center|start"
+                            android:text="Description"
+                            android:textColor="@color/grey"
+                            android:textSize="16sp" />
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/vL_addpop_descLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext_bg_cornercrop"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/vE_appu_description"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center|start"
+                            android:layout_margin="10dp"
+                            android:background="@android:color/transparent"
+                            android:gravity="top|start"
+                            android:hint="Enter Description"
+                            android:inputType="text|textMultiLine|textNoSuggestions"
+                            android:maxLength="320"
+                            android:maxLines="12"
+                            android:minHeight="100dp"
+                            android:scrollHorizontally="false"
+                            android:singleLine="true"
+                            android:textColor="@color/grey"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/vT_appu_productImageText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|start"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center|start"
+                        android:text="Offer Image"
+                        android:textColor="@color/grey"
+                        android:textSize="16sp" />
+
+                    <RelativeLayout
+                        android:id="@+id/vL_appu_addpictureLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/grey_border"
+                        android:gravity="center">
+
+                        <View
+                            android:layout_alignTop="@+id/vI_appu_addpictureImagebig"
+                            android:layout_width="match_parent"
+                            android:id="@+id/view"
+                            android:layout_height="match_parent"
+                            android:background="@color/tranparentblackcarousel"/>
+
+                        <ImageView
+                            android:id="@+id/vI_appu_addpictureImagebig"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:scaleType="fitXY" />
+
+                        <ImageView
+                            android:id="@+id/vI_appu_addpictureImage"
+                            android:layout_width="62dp"
+                            android:layout_height="62dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/camera" />
+
+
+                        <TextView
+                            android:id="@+id/vT_appu_addpictureText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/vI_appu_addpictureImage"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="20dp"
+                            android:text="Add Picture"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+
+                        <TextView
+                            android:id="@+id/vT_appu_editPicText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="20dp"
+                            android:drawableRight="@drawable/edit"
+                            android:gravity="bottom"
+                            android:text="Edit  "
+                            android:textColor="@color/white"
+                            android:textSize="22sp"
+                            android:visibility="invisible" />
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/vL_appu_saveLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/orange_crop_background"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/vT_appu_saveText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Save"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>
+
